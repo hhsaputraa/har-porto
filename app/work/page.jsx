@@ -32,9 +32,9 @@ const projects = [
     description:
       "JobsSukabumi is a dedicated job portal designed to connect job seekers with the best employment opportunities in the Sukabumi region. Our platform provides a seamless experience for finding and applying to specialized roles across various industries. JobsSukabumi is your go-to resource for local job opportunities.",
     stack: [{ name: "React" }, { name: "Next JS" }, { name: "Typescript" }, { name: "Firebase" }, { name: "MongoDB" }, { name: "Google AI Studio" }],
-    image: "/assets/work/thumb2.png",
+    image: "/assets/work/project2.jpg",
     live: "",
-    github: "",
+    github: "https://github.com/hhsaputraa/job-portal",
   },
   {
     num: "03",
@@ -42,7 +42,7 @@ const projects = [
     title: "project 3",
     description: "Modern article blog website(ongoing project)",
     stack: [{ name: "NextJs" }],
-    image: "/assets/work/thumb1.png",
+    image: "/assets/work/",
     live: "",
     github: "",
   },
