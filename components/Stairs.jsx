@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 const stairAnimation = {
   initial: {
@@ -12,17 +13,23 @@ const stairAnimation = {
   },
 };
 
-//calculate
-const reverseIndex = (index) => {
-  const totalSteps = 6;
+// calculate reverse index
+const reverseIndex = (index, totalSteps) => {
   return totalSteps - index - 1;
 };
 
 const Stairs = () => {
+  const pathname = usePathname(); // Get current path
+  const totalSteps = 6; // Number of animated elements
+
+  // Render nothing if the current path is '/contact'
+  if (pathname === "/contact") {
+    return null;
+  }
+
   return (
     <>
-      {/* render 6 motion */}
-      {[...Array(1)].map((_, index) => {
+      {[...Array(totalSteps)].map((_, index) => {
         return (
           <motion.div
             key={index}
@@ -33,9 +40,10 @@ const Stairs = () => {
             transition={{
               duration: 0.4,
               ease: "easeInOut",
-              delay: reverseIndex(index) * 0.1,
+              delay: reverseIndex(index, totalSteps) * 0.1,
             }}
-            className="h-full w-full bg-white relative"
+            className="h-full w-full bg-white absolute"
+            style={{ top: 0 }} // Initial position at the top
           />
         );
       })}

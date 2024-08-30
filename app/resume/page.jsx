@@ -1,8 +1,9 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaJsSquare, FaBootstrap, FaPhp } from "react-icons/fa";
+import { DiCodeigniter } from "react-icons/di";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiMysql, SiMongodb, SiGooglecloud, SiFirebase } from "react-icons/si";
 
 //ABOUT DATA
 const about = {
@@ -37,22 +38,18 @@ const about = {
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
-  description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error tempore",
+  description:
+    "Over the course of my career, I have gained valuable experience in both Full Stack Development and Cloud Engineering.These experiences have equipped me with a strong technical foundation and the ability to deliver robust software solutions.",
   items: [
     {
-      company: "tech",
-      position: "full",
-      duration: "2022 - pre",
+      company: "Job Portal App",
+      position: "Full Stack Developer",
+      duration: "July - August 2024",
     },
     {
-      company: "tech",
-      position: "full",
-      duration: "2022 - pre",
-    },
-    {
-      company: "tech",
-      position: "full",
-      duration: "2022 - pre",
+      company: "Thrive App ",
+      position: "Cloud Engineer",
+      duration: "May - June 2024",
     },
   ],
 };
@@ -61,22 +58,22 @@ const experience = {
 const nonit = {
   icon: "/assets/resume/badge.svg",
   title: "Non IT Experience",
-  description: "tesss",
+  description: "",
   items: [
     {
-      company: "xxxx",
-      position: "xxx",
-      duration: "xxx",
+      company: "Origami Foto Studio",
+      position: "Editor",
+      duration: "Jan 2023 - Des 2023",
     },
     {
-      company: "xx",
-      position: "xx",
-      duration: "xx",
+      company: "PT Pancaran bumi segara (freelance)",
+      position: "LPG 3KG delivery assistant",
+      duration: "June 2020 - Desc 2022",
     },
     {
-      company: "x",
-      position: "x",
-      duration: "x",
+      company: "PT.ASTRA Honda Motor",
+      position: "Operator Production",
+      duration: "July 2018 - May 2020",
     },
   ],
 };
@@ -84,23 +81,23 @@ const nonit = {
 //education data
 const education = {
   icon: "/assets/resume/cap.svg",
-  title: "My edu",
-  description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error tempore",
+  title: "My education",
+  description: "",
   items: [
     {
-      institutuion: "bsi",
-      degree: "full",
-      duration: "2022 - pre",
+      institutuion: "Bangkit Academy",
+      degree: "Cloud Computing",
+      duration: "Feb - Jun 2024",
     },
     {
-      institutuion: "bsi",
-      degree: "full",
-      duration: "2022 - pre",
+      institutuion: "Bina Sarana University",
+      degree: "Information System",
+      duration: "2020 - Present",
     },
     {
-      institutuion: "bsi",
-      degree: "full",
-      duration: "2022 - pre",
+      institutuion: "SMKN 4 Sukabumi",
+      degree: "motorcycle engineering",
+      duration: "2015 - 2018",
     },
   ],
 };
@@ -108,31 +105,64 @@ const education = {
 //skill data
 const skills = {
   title: "My skills",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nostrum?",
+  description: "",
   skillList: [
     {
       icon: <FaHtml5 />,
       name: "html 5",
     },
     {
-      icon: <FaNodeJs />,
-      name: "node js",
+      icon: <FaCss3 />,
+      name: "CSS",
+    },
+    {
+      icon: <FaJsSquare />,
+      name: "Javascript",
+    },
+    {
+      icon: <FaPhp />,
+      name: "PHP",
+    },
+    {
+      icon: <FaBootstrap />,
+      name: "Bootstrap",
+    },
+    {
+      icon: <SiTailwindcss />,
+      name: "Tailwind css",
+    },
+    {
+      icon: <SiMysql />,
+      name: "MySQL",
+    },
+    {
+      icon: <SiMongodb />,
+      name: "MongoDb",
+    },
+    {
+      icon: <SiFirebase />,
+      name: "Firebase",
+    },
+    {
+      icon: <SiGooglecloud />,
+      name: "Google Cloud Platform",
+    },
+    {
+      icon: <DiCodeigniter />,
+      name: "Codeigniter",
     },
     {
       icon: <FaNodeJs />,
       name: "node js",
     },
     {
-      icon: <FaNodeJs />,
-      name: "node js",
+      icon: <FaReact />,
+      name: "React",
     },
+
     {
-      icon: <FaNodeJs />,
-      name: "node js",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "node js",
+      icon: <SiNextdotjs />,
+      name: "Next Js",
     },
   ],
 };
@@ -194,11 +224,11 @@ const Resume = () => {
                       return (
                         <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center  lg:items-start gap-1">
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.company}</h3>
                           <div className="flex items-center gap-3">
                             {/* dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p>{item.company}</p>
+                            <p>{item.position}</p>
                           </div>
                         </li>
                       );
@@ -218,11 +248,11 @@ const Resume = () => {
                       return (
                         <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center  lg:items-start gap-1">
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.institutuion}</h3>
                           <div className="flex items-center gap-3">
                             {/* dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p>{item.institutuion}</p>
+                            <p>{item.degree}</p>
                           </div>
                         </li>
                       );
