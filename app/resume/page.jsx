@@ -184,7 +184,7 @@ const Resume = () => {
             <TabsTrigger value="nonit">Non IT Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
+            {/* <TabsTrigger value="about">About me</TabsTrigger> */}
           </TabsList>
 
           {/* content */}
@@ -290,7 +290,7 @@ const Resume = () => {
               </div>
             </TabsContent>
             {/* about */}
-            <TabsContent value="about" className="w-full text-center xl:text-left">
+            {/* <TabsContent value="about" className="w-full text-center xl:text-left">
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
@@ -305,7 +305,7 @@ const Resume = () => {
                   })}
                 </ul>
               </div>
-            </TabsContent>
+            </TabsContent> */}
           </div>
         </Tabs>
       </div>

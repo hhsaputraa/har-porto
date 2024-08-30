@@ -16,30 +16,32 @@ import WorksliderButton from "@/components/WorksliderButton";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    stack: [{ name: "Html 5 " }, { name: "Javascript" }, { name: "Html 5 " }, { name: "Html 5 " }],
-    image: "/assets/work/thumb1.png",
+    category: "Thrive",
+    title: "Backend & Cloud Engineer",
+    description:
+      "Thrive is an Android application that utilizes the power of artificial intelligence to analyze speech patterns and detect potential signs of depression. By recording a short audio sample, Thrive can help individuals gain a better understanding of their mental well-being and encourage them to seek professional support when needed.",
+    stack: [{ name: "Javascript" }, { name: "Node Js " }, { name: "Google Cloud Platform" }, { name: "Python " }, { name: "Docker" }],
+    image: "/assets/work/project1.jpg",
     live: "",
-    github: "",
+    github: "https://github.com/Thrive-Depression-Speech-Analytics/thrive-backend",
   },
   {
     num: "02",
-    category: "frontend",
-    title: "project 1",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    stack: [{ name: "Html 5 " }, { name: "Javascript" }, { name: "Html 5 " }, { name: "Html 5 " }],
+    category: "JobsSukabumi",
+    title: "Fullstack",
+    description:
+      "JobsSukabumi is a dedicated job portal designed to connect job seekers with the best employment opportunities in the Sukabumi region. Our platform provides a seamless experience for finding and applying to specialized roles across various industries. JobsSukabumi is your go-to resource for local job opportunities.",
+    stack: [{ name: "React" }, { name: "Next JS" }, { name: "Typescript" }, { name: "Firebase" }, { name: "MongoDB" }, { name: "Google AI Studio" }],
     image: "/assets/work/thumb2.png",
     live: "",
     github: "",
   },
   {
     num: "03",
-    category: "frontend",
+    category: "Harticle",
     title: "project 3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    stack: [{ name: "Html 5 " }, { name: "Javascript" }, { name: "Html 5 " }, { name: "Html 5 " }],
+    description: "Modern article blog website(ongoing project)",
+    stack: [{ name: "NextJs" }],
     image: "/assets/work/thumb1.png",
     live: "",
     github: "",
@@ -64,20 +66,21 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">{project.num}</div>
             </div>
             {/* project category */}
-            <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category} project</h2>
+            <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize my-5">{project.category} project</h2>
             {/* project description */}
-            <p className="text-white/60">{project.description}</p>
+            <p className="text-white/60 my-5">{project.description}</p>
             {/* stack */}
-            <ul className="flex gap-4">
+            <ul className="flex flex-wrap gap-2">
               {project.stack.map((item, index) => {
                 return (
                   <li key={index} className="text-xl text-accent">
                     {item.name}
-                    {index !== project.stack.length - 1 && ","}
+                    {index !== project.stack.length - 1 && <span className="ml-1">,</span>}
                   </li>
                 );
               })}
             </ul>
+
             {/* border */}
             <div className="border border-white/20"></div>
             {/* button */}
@@ -96,7 +99,7 @@ const Work = () => {
                 </TooltipProvider>
               </Link>
               {/* github project button */}
-              <Link href={project.live}>
+              <Link href={project.github}>
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
                     <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
