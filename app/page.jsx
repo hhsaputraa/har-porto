@@ -20,7 +20,7 @@ const Home = () => {
 
             <p className="max-w-[500px] mb-9 text-white/80">
               I'm active student in the 7th semester of the information system from Bina Sarana University <br />
-              interested in becoming a full-stack web develover and currently learning a lot to become one
+              interested in becoming a full-stack web developer and currently learning a lot to become one
             </p>
 
             {/* button */}
