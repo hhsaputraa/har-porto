@@ -14,22 +14,6 @@ const about = {
       fieldName: "Name",
       fieldValue: "Hari Handika",
     },
-    {
-      fieldName: "Name",
-      fieldValue: "Hari Handika",
-    },
-    {
-      fieldName: "Name",
-      fieldValue: "Hari Handika",
-    },
-    {
-      fieldName: "Name",
-      fieldValue: "Hari Handika",
-    },
-    {
-      fieldName: "Name",
-      fieldValue: "Hari Handika",
-    },
   ],
 };
 
@@ -62,7 +46,7 @@ const nonit = {
   items: [
     {
       company: "Origami Foto Studio",
-      position: "Editor",
+      position: "Support",
       duration: "Jan 2023 - Des 2023",
     },
     {
