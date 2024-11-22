@@ -19,7 +19,7 @@ const experience = {
     "Over the course of my career, I have gained valuable experience in both Full Stack Development and Cloud Engineering.These experiences have equipped me with a strong technical foundation and the ability to deliver robust software solutions.",
   items: [
     {
-      company: "PT Saka Farma Laboratoris (Kalbe Consumer Health)",
+      company: "PT Saka Farma Laboratoris",
       position: "App Developer",
       duration: "Oct - Present",
       detail: [
