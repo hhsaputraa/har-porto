@@ -35,8 +35,10 @@ const MobileNav = () => {
         {/* logo */}
         <div className="mt-32 mb-40 text-center text-2xl">
           <Link href="/">
-            <h1 className="text-4xl font-semibold">
-              hari<span className="text-accent">.</span>
+            <h1 className="text-4xl font-primary font-bold tracking-tight">
+              <span className="text-accent"> &lt;</span>
+              hari&nbsp;
+              <span className="text-accent">/&gt;</span>
             </h1>
           </Link>
         </div>

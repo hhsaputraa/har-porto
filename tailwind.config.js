@@ -14,10 +14,11 @@ module.exports = {
       lg: "960px",
       xl: "1200px",
     },
-    fontFamily: {
-      primary: "var(--font-jetbrainsMono)",
-    },
+
     extend: {
+      fontFamily: {
+        primary: ["'Source Code Pro'", "monospace"], // Ubah bagian ini
+      },
       colors: {
         primary: "#1c1c22",
         accent: {
