@@ -2,12 +2,13 @@
 
 import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaJsSquare, FaBootstrap, FaPhp } from "react-icons/fa";
 import { DiCodeigniter } from "react-icons/di";
-import { SiTailwindcss, SiNextdotjs, SiMysql, SiMongodb, SiGooglecloud, SiFirebase } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiMysql, SiMongodb, SiGooglecloud, SiFirebase, SiGolang, SiPostgresql } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { FaGolang } from "react-icons/fa6";
 import { FaBriefcase, FaBusinessTime, FaGraduationCap, FaCode, FaCaretDown } from "react-icons/fa";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 //Experience data
@@ -19,13 +20,13 @@ const experience = {
     "Over the course of my career, I have gained valuable experience in both Full Stack Development and Cloud Engineering.These experiences have equipped me with a strong technical foundation and the ability to deliver robust software solutions.",
   items: [
     {
-      company: "PT Saka Farma Laboratoris",
+      company: "PT Saka Farma Laboratories (Kalbe Consumer Health)",
       position: "App Developer",
       duration: "Oct - Present",
       detail: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, sequi",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, sequi",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, sequi",
+        "Developed and managed APIs to ensure optimal performance and data security while identifying and resolving bugs to maintain smooth application functionality.",
+        "Built a responsive and intuitive user interface with a focus on delivering a seamless user experience, implementing Create, Read, Update, and Delete (CRUD) functionalities for effective data interaction.",
+        "Collaborated with other developers to plan new features and enhance overall application performance, ensuring continuous improvement and innovation.",
       ],
     },
 
@@ -33,16 +34,20 @@ const experience = {
       company: "JobsSukabumi App (self project)",
       position: "Fullstack Developer",
       duration: "Jul - Aug 2024",
-      detail: ["", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, sequi", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, sequi"],
+      detail: [
+        "Developed an intuitive and responsive user interface using modern web technologies, ensuring a seamless user experience across various devices.",
+        "Integrated AI from Google AI Studio to provide assisting administrators in obtaining precise job descriptions and improving job posting quality",
+        "Developed CRUD functionalities to enable users and administrators to manage job data, including adding, viewing, updating, and deleting job postings.",
+        "Implemented the system uses SMTP to send notifications to users regarding the status of their applications, whether accepted or rejected.",
+      ],
     },
     {
       company: "Bangkit Capstone Project",
       position: "Cloud Backend & Engineer",
       duration: "May - Jun 2024",
       detail: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, sequi",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, sequi",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, sequi",
+        " Successfully built and implemented scalable backend services at GCP using Cloud Run services, ensuring high availability and optimal performance.",
+        " Implemented cost optimization strategies at GCP, effectively reducing monthly expenses from $23 to $15. This resulted in cost savings for the project.",
       ],
     },
   ],
@@ -158,6 +163,14 @@ const skills = {
       icon: <SiNextdotjs />,
       name: "Next Js",
     },
+    {
+      icon: <FaGolang />, // Tambahkan Golang
+      name: "Golang",
+    },
+    {
+      icon: <SiPostgresql />, // Tambahkan PostgreSQL
+      name: "PostgreSQL",
+    },
   ],
 };
 
@@ -247,8 +260,8 @@ const Resume = () => {
             {/* experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col text-left">
-                <h3 className="text-4xl font-bold mb-7">{experience.title}</h3>
-                <p className="text-gray-300 mx-auto mb-6 text-justify text-sm md:text-base lg:text-lg leading-relaxed break-words">{experience.description}</p>
+                <h3 className="text-4xl font-bold mb-3 mx-8 md:mx-auto">{experience.title}</h3>
+                <p className="text-gray-300 mx-8 md:mx-auto mb-6 text-justify text-sm md:text-base lg:text-lg leading-relaxed break-words">{experience.description}</p>
                 <ScrollArea className="h-[400px] overflow-y-auto">
                   <ul className="grid grid-cols-1 lg:grid-cols-1 gap-6">
                     {experience.items.map((item, index) => {
@@ -263,7 +276,8 @@ const Resume = () => {
                             {item.detail.map((detail, detailIndex) => (
                               <div key={detailIndex} className="flex items-center gap-3">
                                 {/* dot */}
-                                <span className="w-[6px] h-[6px] rounded-full bg-accent mt-2 self-start"></span> <p className="text-sm lg:text-base">{detail}</p>
+                                <span className="text-accent self-start">•</span>
+                                <p className="text-sm lg:text-base mb-4 text-justify">{detail}</p>
                               </div>
                             ))}
                           </div>
@@ -276,7 +290,7 @@ const Resume = () => {
             </TabsContent>
             {/* non it */}
             <TabsContent value="nonit" className="w-full">
-              <div className="flex flex-col gap-[30px] text-left">
+              <div className="flex flex-col gap-[30px] text-left md:text-center">
                 <h3 className="text-4xl font-bold">{nonit.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{nonit.description}</p>
                 <ScrollArea className="h-[400px]">

@@ -18,9 +18,9 @@ const Home = () => {
               Hello I'm <br /> <span class="text-accent">Hari Handika</span>
             </h1>
 
-            <p className="max-w-[500px] mb-9 text-white/80">
-              I'm active student in the 7th semester of the information system from Bina Sarana University <br />
-              interested in becoming a full-stack web developer and currently learning a lot to become one
+            <p className="max-w-[500px] mt-5 mx-8 xl:mx-0 mb-9 text-white/80 text-justify">
+              I'm an active student in the 7th semester of the information system from Bina Sarana University <br />
+              interested in becoming a full-stack web developer and currently learning a lot to become one.
             </p>
 
             {/* button */}
