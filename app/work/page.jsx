@@ -28,7 +28,7 @@ const projects = [
   {
     num: "02",
     category: "JobsSukabumi",
-    title: "Fullstack",
+    title: "Fullstack Developer",
     description:
       "JobsSukabumi is a dedicated job portal designed to connect job seekers with the best employment opportunities in the Sukabumi region. Our platform provides a seamless experience for finding and applying to specialized roles across various industries. JobsSukabumi is your go-to resource for local job opportunities.",
     stack: [{ name: "React" }, { name: "Next JS" }, { name: "Typescript" }, { name: "Firebase" }, { name: "MongoDB" }, { name: "Google AI Studio" }],
@@ -38,10 +38,10 @@ const projects = [
   },
   {
     num: "03",
-    category: "Harticle",
-    title: "project 3",
-    description: "Modern article blog website(ongoing project)",
-    stack: [{ name: "NextJs" }],
+    category: "SukaEvent",
+    title: "Fullstack Developer",
+    description: "SukaEvent is a web application that allows users to create and manage events. It is built using Next.js and Tailwind CSS.",
+    stack: [{ name: "Next Js" }, { name: "Express" }, { name: "PostgreSQL" }, { name: "Sequelize" }, { name: "cloudinary" }],
     image: "/assets/work/",
     live: "",
     github: "",
@@ -57,7 +57,7 @@ const Work = () => {
     setProject(projects[currentIndex]);
   };
   return (
-    <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }} className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0 ">
+    <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 0.2, duration: 0.3, ease: "easeIn" } }} className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0 ">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30-px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
