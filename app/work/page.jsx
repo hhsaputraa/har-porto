@@ -28,7 +28,7 @@ const projects = [
   {
     num: "02",
     category: "JobsSukabumi",
-    title: "Fullstack",
+    title: "Fullstack Developer",
     description:
       "JobsSukabumi is a dedicated job portal designed to connect job seekers with the best employment opportunities in the Sukabumi region. Our platform provides a seamless experience for finding and applying to specialized roles across various industries. JobsSukabumi is your go-to resource for local job opportunities.",
     stack: [{ name: "React" }, { name: "Next JS" }, { name: "Typescript" }, { name: "Firebase" }, { name: "MongoDB" }, { name: "Google AI Studio" }],
@@ -38,10 +38,10 @@ const projects = [
   },
   {
     num: "03",
-    category: "Harticle",
-    title: "project 3",
-    description: "Modern article blog website(ongoing project)",
-    stack: [{ name: "NextJs" }],
+    category: "SukaEvent",
+    title: "Fullstack Developer",
+    description: "SukaEvent is a web application that allows users to create and manage events. It is built using Next.js and Tailwind CSS.",
+    stack: [{ name: "Next Js" }, { name: "Express" }, { name: "PostgreSQL" }, { name: "Sequelize" }, { name: "cloudinary" }],
     image: "/assets/work/",
     live: "",
     github: "",

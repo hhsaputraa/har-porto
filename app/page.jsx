@@ -45,7 +45,7 @@ const timeline = [
     icon: FaBriefcase,
   },
   {
-    year: "2022",
+    year: "2024",
     title: "Studied at Bangkit Academy",
     description: "Completed an intensive cloud computing program at Bangkit Academy",
     icon: FaGraduationCap,
@@ -83,12 +83,12 @@ const Home = () => {
             </h1>
 
             <p className="max-w-[500px] mt-5 mx-auto xl:mx-0 mb-9 text-white/80 text-lg">
-              I'm an active Fresh Graduate from Information Systems student at Bina Sarana University, passionate about full-stack application development, operation and constantly expanding my skills in this field.
+              I'm an Fresh Graduate from Information Systems student at Bina Sarana University, passionate about full-stack application development,building prototype business logic and analyzing system operation to deliver effective solutions for real-world problems. I am committed to constantly expanding my skills in this field to tackle more complex challenges.
             </p>
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center xl:justify-start gap-4 mb-8">
-              <a href="https://drive.google.com/file/d/1zR-gRfvSbvQ9-fpoIg_oTYgDL0dFuDcp/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1CnIXD7mLKQ-6tB-_hJBtmnFS7BwJqLzt/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="lg" className="w-full sm:w-auto">
                   <FiEye className="mr-2" />
                   Preview CV
