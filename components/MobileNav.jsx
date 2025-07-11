@@ -35,7 +35,6 @@ const MobileNav = () => {
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
-      {" "}
       {/* Mengontrol open dari Sheet */}
       <SheetTrigger className="flex justify-center items-center" onClick={() => setIsOpen(true)}>
         <CiMenuFries className="text-[32px] text-accent" />
@@ -44,7 +43,6 @@ const MobileNav = () => {
         {/* logo */}
         <div className="mt-32 mb-40 text-center text-2xl">
           <Link href="/" onClick={handleLinkClick}>
-            {" "}
             {/* Menutup Sheet saat logo diklik */}
             <h1 className="text-4xl font-primary font-bold tracking-tight">
               <span className="text-accent"> &lt;</span>

@@ -2,20 +2,26 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
-//component
-import Stairs from "./Stairs";
-
 const StairTransition = () => {
   const pathname = usePathname();
+
+  // Set to false to completely disable transition animations
+  const enableTransitions = true;
+
+  if (!enableTransitions) {
+    return null;
+  }
+
   return (
     <>
       <AnimatePresence mode="wait">
         <div key={pathname}>
-          <div className="h-screen fixed top-0 left-0 right-0 pointer-events-none z-40 flex">
-            <Stairs />
-          </div>
-
-          <motion.div className="h-screen w-screen fixed bg-primary top-0 pointer-events-none" initial={{ opacity: 1 }} animate={{ opacity: 0, transition: { delay: 1, duration: 0.4, ease: "easeInOut" } }} />
+          {/* Simplified transition - just a quick fade */}
+          <motion.div
+            className="h-screen w-screen fixed bg-primary top-0 pointer-events-none z-40"
+            initial={{ opacity: 1 }}
+            animate={{ opacity: 0, transition: { delay: 0.05, duration: 0.15, ease: "easeInOut" } }}
+          />
         </div>
       </AnimatePresence>
     </>
