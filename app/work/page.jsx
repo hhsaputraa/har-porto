@@ -22,7 +22,7 @@ const projects = [
       "Thrive is an Android application that utilizes the power of artificial intelligence to analyze speech patterns and detect potential signs of depression. By recording a short audio sample, Thrive can help individuals gain a better understanding of their mental well-being and encourage them to seek professional support when needed.",
     stack: [{ name: "Javascript" }, { name: "Node Js " }, { name: "Google Cloud Platform" }, { name: "Python " }, { name: "Docker" }],
     image: "/assets/work/project1.jpg",
-    live: "",
+    live: "https://github.com/Thrive-Depression-Speech-Analytics/thrive-backend",
     github: "https://github.com/Thrive-Depression-Speech-Analytics/thrive-backend",
   },
   {
@@ -33,7 +33,7 @@ const projects = [
       "JobsSukabumi is a dedicated job portal designed to connect job seekers with the best employment opportunities in the Sukabumi region. Our platform provides a seamless experience for finding and applying to specialized roles across various industries. JobsSukabumi is your go-to resource for local job opportunities.",
     stack: [{ name: "React" }, { name: "Next JS" }, { name: "Typescript" }, { name: "Firebase" }, { name: "MongoDB" }, { name: "Google AI Studio" }],
     image: "/assets/work/project2.jpg",
-    live: "",
+    live: "jobs-sukabumi.vercel.app",
     github: "https://github.com/hhsaputraa/job-portal",
   },
   {
