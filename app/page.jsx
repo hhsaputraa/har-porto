@@ -6,6 +6,7 @@ import { FaCode, FaDatabase, FaServer, FaWarehouse, FaGraduationCap, FaBriefcase
 import { TbCloudComputing } from "react-icons/tb";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 // Components
 import Social from "@/components/Social";
@@ -23,18 +24,18 @@ const projects = [
   {
     title: "Vibe Coding - Random Team Maker",
     description: "A Random Team Maker user just upload the regitrant form",
-    image: "/placeholder.svg",
+    image: "/assets/work/random.png",
     github: "https://github.com",
     live: "https://agustusan-random.vercel.app/",
   },
   {
     title: "Vibe Coding - EnjunPilem",
     description: "A Streaming Movies Platform No ads",
-    image: "/placeholder.svg",
+    image: "/assets/work/enjunpilem.png",
     github: "https://github.com",
     live: "https://enjunpilem.vercel.app/",
   },
-  // Add more projects as needed
+
 ];
 
 const timeline = [
@@ -171,18 +172,22 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div key={index} className="bg-primary rounded-lg overflow-hidden shadow-lg">
-                <Image src={project.image || "/placeholder.svg"} alt={project.title} width={400} height={200} className="w-full h-48 object-cover" />
+                <Image src={project.image} alt={project.title} width={400} height={200} className="w-full h-48 object-cover" />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                   <p className="text-white/80 mb-4">{project.description}</p>
-                  <div className="flex justify-between">
-                    <Button variant="outline" size="sm">
-                      <FiGithub className="mr-2" />
-                      GitHub
+                  <div className="flex items-center gap-4 mt-auto pt-4">
+                    <Button asChild variant="outline" size="sm" className="flex-1">
+                      <Link href={project.github} target="_blank" rel="noopener noreferrer">
+                        <FiGithub className="mr-2 h-4 w-4" />
+                        GitHub
+                      </Link>
                     </Button>
-                    <Button variant="default" size="sm">
-                      <FiExternalLink className="mr-2" />
-                      Live Demo
+                    <Button asChild variant="default" size="sm" className="flex-1">
+                      <Link href={project.live} target="_blank" rel="noopener noreferrer">
+                        <FiExternalLink className="mr-2 h-4 w-4" />
+                        Live Demo
+                      </Link>
                     </Button>
                   </div>
                 </div>
