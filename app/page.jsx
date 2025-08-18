@@ -21,18 +21,18 @@ const skills = [
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A brief description of Project 1",
+    title: "Vibe Coding - Random Team Maker",
+    description: "A Random Team Maker user just upload the regitrant form",
     image: "/placeholder.svg",
     github: "https://github.com",
-    live: "https://example.com",
+    live: "https://agustusan-random.vercel.app/",
   },
   {
-    title: "Project 2",
-    description: "A brief description of Project 2",
+    title: "Vibe Coding - EnjunPilem",
+    description: "A Streaming Movies Platform No ads",
     image: "/placeholder.svg",
     github: "https://github.com",
-    live: "https://example.com",
+    live: "https://enjunpilem.vercel.app/",
   },
   // Add more projects as needed
 ];
