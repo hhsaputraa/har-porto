@@ -66,8 +66,8 @@ const projects = [
     description: "EnjunPilem is a streaming movies platform that provides users with access to a wide variety of movies and TV shows. The platform is built using Vite.js and Bun",
     stack: [{ name: "Vite" }, { name: "Bun" }, { name: "Tailwind CSS" }, { name: "Typescript" }, { name: "Supabase" }],
     image: "/assets/work/enjunpilem.png",
-    live: "enjunpilem.vercel.app",
-    github: "",
+    live: "https://enjunpilem.vercel.app",
+    github: "https://github.com",
   },
   {
     num: "06",
