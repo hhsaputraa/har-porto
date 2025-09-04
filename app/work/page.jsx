@@ -44,7 +44,7 @@ const projects = [
       "A comprehensive project management system developed for SAKAMANUF to enhance workflow efficiency. This application allows teams to track tasks, manage project timelines, and monitor progress seamlessly through a user-friendly interface built with Next.js and a robust Golang backend",
     stack: [{ name: "React" }, { name: "Next JS" }, { name: "Javascript" }, { name: "Golang" }, { name: "MySQL" }, { name: "XAMPP" }, { name: "REST API" }],
     image: "/assets/work/sakamanuf.png",
-    live: "https://github.com/Thrive-Depression-Speech-Analytics/thrive-backend",
+    live: "",
     github: "https://github.com",
   },
   {
