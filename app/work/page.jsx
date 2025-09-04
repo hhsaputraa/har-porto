@@ -16,17 +16,6 @@ import WorksliderButton from "@/components/WorksliderButton";
 const projects = [
   {
     num: "01",
-    category: "Thrive",
-    title: "Backend & Cloud Engineer",
-    description:
-      "Thrive is an Android application that utilizes the power of artificial intelligence to analyze speech patterns and detect potential signs of depression. By recording a short audio sample, Thrive can help individuals gain a better understanding of their mental well-being and encourage them to seek professional support when needed.",
-    stack: [{ name: "Javascript" }, { name: "Node Js " }, { name: "Google Cloud Platform" }, { name: "Python " }, { name: "Docker" }],
-    image: "/assets/work/project1.jpg",
-    live: "https://github.com/Thrive-Depression-Speech-Analytics/thrive-backend",
-    github: "https://github.com/Thrive-Depression-Speech-Analytics/thrive-backend",
-  },
-  {
-    num: "02",
     category: "JobsSukabumi",
     title: "Fullstack Developer",
     description:
@@ -37,8 +26,52 @@ const projects = [
     github: "https://github.com/hhsaputraa/job-portal",
   },
   {
+    num: "02",
+    category: "Pengkajian Mutu Produk",
+    title: "Fullstack Developer",
+    description:
+      "An information system designed to manage and assess the quality of pharmaceutical products. Developed with a microservices architecture, this application features a frontend built with Next.js and a backend powered by Golang and PostgreSQL to ensure data integrity and performance.",
+    stack: [{ name: "React" }, { name: "Next JS" }, { name: "Javascript" }, { name: "Golang" }, { name: "PostgreSQL" }, { name: "REST API" }, { name: "Ngrok" }, { name: "Microservice" }],
+    image: "/assets/work/pmp.png",
+    live: "https://e-mutuproduk.vercel.app/",
+    github: "https://github.com/hhsaputraa/sistem-informasi-kualitas-obat-fe",
+  },
+  {
     num: "03",
-    category: "SukaEvent",
+    category: "SAKAMANUF Project Management",
+    title: "Fullstack Developer",
+    description:
+      "A comprehensive project management system developed for SAKAMANUF to enhance workflow efficiency. This application allows teams to track tasks, manage project timelines, and monitor progress seamlessly through a user-friendly interface built with Next.js and a robust Golang backend",
+    stack: [{ name: "React" }, { name: "Next JS" }, { name: "Javascript" }, { name: "Golang" }, { name: "MySQL" }, { name: "XAMPP" }, { name: "REST API" }],
+    image: "/assets/work/sakamanuf.png",
+    live: "https://github.com/Thrive-Depression-Speech-Analytics/thrive-backend",
+    github: "https://github.com",
+  },
+  {
+    num: "04",
+    category: "Thrive",
+    title: "Backend & Cloud Engineer",
+    description:
+      "Thrive is an Android application that utilizes the power of artificial intelligence to analyze speech patterns and detect potential signs of depression. By recording a short audio sample, Thrive can help individuals gain a better understanding of their mental well-being and encourage them to seek professional support when needed.",
+    stack: [{ name: "Javascript" }, { name: "Node Js " }, { name: "Google Cloud Platform" }, { name: "Python " }, { name: "Docker" }],
+    image: "/assets/work/project1.jpg",
+    live: "https://github.com/Thrive-Depression-Speech-Analytics/thrive-backend",
+    github: "https://github.com/Thrive-Depression-Speech-Analytics/thrive-backend",
+  }
+  ,
+  {
+    num: "05",
+    category: "EnjunPilem",
+    title: "Fullstack Developer",
+    description: "EnjunPilem is a streaming movies platform that provides users with access to a wide variety of movies and TV shows. The platform is built using Vite.js and Bun",
+    stack: [{ name: "Vite" }, { name: "Bun" }, { name: "Tailwind CSS" }, { name: "Typescript" }, { name: "Supabase" }],
+    image: "/assets/work/enjunpilem.png",
+    live: "enjunpilem.vercel.app",
+    github: "",
+  },
+  {
+    num: "06",
+    category: "SukaEvent (ongoing)",
     title: "Fullstack Developer",
     description: "SukaEvent is a web application that allows users to create and manage events. It is built using Next.js and Tailwind CSS.",
     stack: [{ name: "Next Js" }, { name: "Express" }, { name: "PostgreSQL" }, { name: "Sequelize" }, { name: "cloudinary" }],
