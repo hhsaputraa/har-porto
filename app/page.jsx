@@ -84,7 +84,8 @@ const Home = () => {
             </h1>
 
             <p className="max-w-[500px] mt-5 mx-auto xl:mx-0 mb-9 text-white/80 text-lg">
-              I'm an Fresh Graduate from Information Systems student at Bina Sarana University, passionate about full-stack application development,building prototype business logic and analyzing system operation to deliver effective solutions for real-world problems. I am committed to constantly expanding my skills in this field to tackle more complex challenges.
+              I am a Software Engineer and Cybersecurity professional with a strong foundation in backend architecture, infrastructure management, and proactive security monitoring.
+              I specialize in building robust, scalable applications using Go, Python, and Next.js, alongside architecting secure server environments with Nginx and Docker. With a deep focus on cybersecurity, I actively work with tools like Wazuh for threat detection and engage in vulnerability assessments to ensure system integrity. I am driven by innovation and eager to leverage my skills to build secure, high-performance solutions that make a significant impact in the tech industry.
             </p>
 
             {/* Buttons */}
